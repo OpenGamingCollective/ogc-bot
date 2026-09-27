@@ -1,0 +1,23 @@
+[workspace]
+resolver = "3"
+members = ["ogc-bot"]
+
+
+[workspace.package]
+version = "0.1.0"
+authors = ["luytan <luytan@khora.me>"]
+repository = "https://github.com/OpenGamingCollective/ogc-bot"
+edition = "2024"
+rust-version = "1.98.1"
+license = "GPL-3.0"
+description = "OpenGamingCollective general purpose bot"
+readme = "README.md"
+
+[workspace.dependencies]
+tokio = { version = "1.53.1", features = ["full"] }
+serde = { version = "1.0.228", features = ["derive"] }
+anyhow = "1.0.102"
+env_logger = "0.11"
+toml = "1.0.3"
+strum = { version = "0.28", features = ["derive"] }
+clap = { version = "4.6.1", features = ["derive"] }
